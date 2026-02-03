@@ -1,6 +1,6 @@
 # PhysNotes
 location for all my physics notes from Intro to Modern Physics to Statitistical Mechanics, Electricity and Magnetism, and more!
-to be implemented after/during spring 2027
+to be implemented after/during fall 2026
 
 plan:
 - add PhysNotes
