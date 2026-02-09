@@ -1,7 +1,7 @@
 
 # Site Metadata
 name: ""
-title: Thomas Campagna - CircuitNotes
+title: Thomas Campagna - PhysNotes
 email: thmscmpgn@gmail.com
 description: >-
   Comprehensive physics notes: covering mechanics, electromagnetism, thermodynamics, quantum physics, and more. A resource for students by a student.
@@ -11,7 +11,7 @@ timezone: America/Chicago
 
 # Deployment Settings
 url: "https://THMSCMPG.github.io"
-baseurl: "/CircuitNotes"
+baseurl: "/PhysNotes"
 
 # Build Settings
 markdown: kramdown
@@ -79,5 +79,5 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: "CircuitNotes"
+      layout: "PhysNotes"
       author: "Thomas Campagna"
