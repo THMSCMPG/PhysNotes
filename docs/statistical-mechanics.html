@@ -1,0 +1,189 @@
+---
+layout: PhysNotes
+title: Statistical Mechanics
+subtitle: Thermodynamics from Microscopic Principles
+---
+
+<div class="section">
+<h2>📊 Statistical Ensembles</h2>
+
+<div class="theory-box">
+<h4>Fundamental Postulate</h4>
+<p>Isolated system in equilibrium: all accessible microstates equally probable</p>
+<p><strong>Entropy:</strong> S = k_B ln Ω</p>
+<p>Ω = number of accessible microstates<br>
+k_B = 1.381×10⁻²³ J/K (Boltzmann constant)</p>
+</div>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Microcanonical Ensemble</h4>
+<p>Isolated system: fixed N, V, E</p>
+<div class="formula">P(microstate) = 1/Ω(E)</div>
+<p>All microstates with energy E equally likely</p>
+</div>
+
+<div class="component-card">
+<h4>Canonical Ensemble</h4>
+<p>System in heat bath: fixed N, V, T</p>
+<div class="formula">
+P(E_i) = e^(-E_i/k_BT)/Z<br>
+Z = Σ_i e^(-E_i/k_BT)
+</div>
+<p>Z = partition function<br>
+<strong>Free energy:</strong> F = -k_BT ln Z</p>
+</div>
+
+<div class="component-card">
+<h4>Grand Canonical Ensemble</h4>
+<p>Open system: fixed μ, V, T</p>
+<div class="formula">
+P(N,E) ∝ e^(-(E-μN)/k_BT)<br>
+Ξ = Σ_{N,i} e^(-(E_i-μN)/k_BT)
+</div>
+<p>μ = chemical potential<br>
+Ξ = grand partition function</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>🌡️ Thermodynamic Connections</h2>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>From Partition Function</h4>
+<div class="formula">
+⟨E⟩ = -∂ln Z/∂β<br>
+S = k_B(ln Z + β⟨E⟩)<br>
+P = k_BT ∂ln Z/∂V
+</div>
+<p>β = 1/(k_BT)</p>
+</div>
+
+<div class="component-card">
+<h4>Maxwell Relations</h4>
+<p>From dU = TdS - PdV + μdN:</p>
+<div class="formula">
+(∂T/∂V)_S = -(∂P/∂S)_V<br>
+(∂S/∂V)_T = (∂P/∂T)_V
+</div>
+</div>
+
+<div class="component-card">
+<h4>Legendre Transforms</h4>
+<p><strong>Helmholtz:</strong> F = U - TS<br>
+<strong>Enthalpy:</strong> H = U + PV<br>
+<strong>Gibbs:</strong> G = H - TS = U - TS + PV</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>⚛️ Quantum Statistics</h2>
+
+<div class="theory-box">
+<h4>Distribution Functions</h4>
+<p><strong>Maxwell-Boltzmann (classical):</strong></p>
+<div class="formula">n_i = (N/Z)e^(-E_i/k_BT)</div>
+<p><strong>Fermi-Dirac (fermions):</strong></p>
+<div class="formula">⟨n_i⟩ = 1/(e^((E_i-μ)/k_BT) + 1)</div>
+<p><strong>Bose-Einstein (bosons):</strong></p>
+<div class="formula">⟨n_i⟩ = 1/(e^((E_i-μ)/k_BT) - 1)</div>
+</div>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Fermi Gas</h4>
+<p>Electrons in metal at T = 0:</p>
+<div class="formula">
+E_F = (ℏ²/2m)(3π²n)^(2/3)<br>
+⟨E⟩ = (3/5)NE_F
+</div>
+<p>E_F = Fermi energy<br>
+All states filled up to E_F</p>
+</div>
+
+<div class="component-card">
+<h4>Bose-Einstein Condensation</h4>
+<p>Macroscopic occupation of ground state below T_c:</p>
+<div class="formula">T_c = (2πℏ²/m k_B)(n/2.612)^(2/3)</div>
+<p>Superfluid helium-4, BEC of ultracold atoms</p>
+</div>
+
+<div class="component-card">
+<h4>Blackbody Radiation</h4>
+<p>Photon gas (bosons):</p>
+<div class="formula">
+u(f) = (8πf²/c³)(hf/(e^(hf/k_BT)-1))<br>
+u_total = σT⁴
+</div>
+<p>σ = 5.67×10⁻⁸ W/(m²·K⁴)<br>
+(Stefan-Boltzmann constant)</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>🔄 Phase Transitions</h2>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Ising Model</h4>
+<p>Ferromagnetism: H = -J Σ_{⟨ij⟩} s_i s_j - h Σ_i s_i</p>
+<p>s_i = ±1 (spin up/down)<br>
+<strong>Critical temperature:</strong> spontaneous magnetization below T_c<br>
+<strong>Order parameter:</strong> ⟨m⟩ ≠ 0 for T < T_c</p>
+</div>
+
+<div class="component-card">
+<h4>Critical Exponents</h4>
+<p>Near T_c:</p>
+<div class="formula">
+C ∝ |t|^(-α)<br>
+m ∝ |t|^β<br>
+χ ∝ |t|^(-γ)
+</div>
+<p>t = (T-T_c)/T_c (reduced temperature)<br>
+Universal behavior across systems</p>
+</div>
+
+<div class="component-card">
+<h4>Clausius-Clapeyron</h4>
+<p>Phase equilibrium line:</p>
+<div class="formula">dP/dT = L/(TΔV)</div>
+<p>L = latent heat<br>
+ΔV = volume change<br>
+Describes P-T diagram boundaries</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>⚡ Nonequilibrium</h2>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Boltzmann Equation</h4>
+<div class="formula">∂f/∂t + v·∇f + F/m·∇_v f = (∂f/∂t)_coll</div>
+<p>f(r,v,t) = distribution function<br>
+Describes evolution toward equilibrium</p>
+</div>
+
+<div class="component-card">
+<h4>H-Theorem</h4>
+<p>Entropy H = -∫f ln f d³v satisfies:</p>
+<div class="formula">dH/dt ≤ 0</div>
+<p>Approaches maximum at equilibrium<br>
+Statistical basis for 2nd law</p>
+</div>
+
+<div class="component-card">
+<h4>Transport Phenomena</h4>
+<p><strong>Diffusion:</strong> J = -D∇n<br>
+<strong>Heat conduction:</strong> J_q = -κ∇T<br>
+<strong>Viscosity:</strong> τ = η(∂v/∂y)<br>
+Green-Kubo formulas relate to correlation functions</p>
+</div>
+</div>
+</div>

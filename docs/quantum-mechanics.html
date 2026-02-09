@@ -1,0 +1,156 @@
+---
+layout: PhysNotes
+title: Quantum Mechanics
+subtitle: Wave Functions and Operator Formalism
+---
+
+<div class="section">
+<h2>🌊 Schrödinger Equation</h2>
+
+<div class="theory-box">
+<h4>Time-Dependent Schrödinger Equation</h4>
+<div class="formula">iℏ ∂ψ/∂t = Ĥψ</div>
+<p>where Ĥ = -ℏ²/(2m)∇² + V(r,t) is the Hamiltonian operator</p>
+<p><strong>Time-Independent (stationary states):</strong></p>
+<div class="formula">Ĥψ = Eψ</div>
+<p>Solutions: ψ(r,t) = φ(r)e^(-iEt/ℏ)</p>
+</div>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Wave Function Interpretation</h4>
+<p><strong>Born rule:</strong> |ψ(r,t)|² = probability density</p>
+<p><strong>Normalization:</strong> ∫|ψ|²d³r = 1</p>
+<p><strong>Expectation value:</strong> ⟨A⟩ = ∫ψ*Âψ d³r</p>
+</div>
+
+<div class="component-card">
+<h4>Uncertainty Principle</h4>
+<div class="formula">
+Δx Δp ≥ ℏ/2<br>
+ΔE Δt ≥ ℏ/2
+</div>
+<p>Fundamental limit, not measurement limitation<br>
+Consequence of wave-particle duality</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>📊 One-Dimensional Systems</h2>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Infinite Square Well</h4>
+<p>V(x) = 0 for 0 < x < L, ∞ elsewhere</p>
+<div class="formula">
+ψ_n(x) = √(2/L) sin(nπx/L)<br>
+E_n = n²π²ℏ²/(2mL²)
+</div>
+<p>Quantized energy levels, n = 1,2,3,...</p>
+</div>
+
+<div class="component-card">
+<h4>Harmonic Oscillator</h4>
+<p>V(x) = ½mω²x²</p>
+<div class="formula">
+E_n = (n + ½)ℏω<br>
+ψ_n(x) ∝ H_n(x)e^(-mωx²/2ℏ)
+</div>
+<p>H_n = Hermite polynomials<br>
+Zero-point energy: E₀ = ℏω/2</p>
+</div>
+
+<div class="component-card">
+<h4>Quantum Tunneling</h4>
+<p>Particle can penetrate classically forbidden regions</p>
+<p><strong>Transmission coefficient:</strong></p>
+<div class="formula">T ≈ e^(-2κL)</div>
+<p>κ = √(2m(V-E))/ℏ for barrier<br>
+Applications: STM, nuclear decay, semiconductors</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>⚛️ Angular Momentum</h2>
+
+<div class="theory-box">
+<h4>Angular Momentum Operators</h4>
+<div class="formula">
+[L_i, L_j] = iℏε_{ijk}L_k<br>
+[L², L_z] = 0
+</div>
+<p><strong>Eigenvalues:</strong></p>
+<div class="formula">
+L²Y_ℓ^m = ℏ²ℓ(ℓ+1)Y_ℓ^m<br>
+L_z Y_ℓ^m = ℏm Y_ℓ^m
+</div>
+<p>ℓ = 0,1,2,... ; m = -ℓ,...,0,...,ℓ</p>
+</div>
+
+<div class="component-card">
+<h4>Spin</h4>
+<p>Intrinsic angular momentum</p>
+<p><strong>Spin-½:</strong> S² = (3/4)ℏ², S_z = ±ℏ/2<br>
+<strong>Pauli matrices:</strong> σ_x, σ_y, σ_z<br>
+<strong>Stern-Gerlach:</strong> Demonstrates space quantization</p>
+</div>
+</div>
+
+<div class="section">
+<h2>⚛️ Hydrogen Atom</h2>
+
+<div class="theory-box">
+<h4>3D Schrödinger for Coulomb Potential</h4>
+<p>V(r) = -ke²/r</p>
+<div class="formula">
+E_n = -13.6 eV/n²<br>
+ψ_{nℓm}(r,θ,φ) = R_{nℓ}(r)Y_ℓ^m(θ,φ)
+</div>
+<p><strong>Quantum numbers:</strong><br>
+n (principal): 1,2,3,... → energy<br>
+ℓ (orbital): 0,...,n-1 → L²<br>
+m (magnetic): -ℓ,...,ℓ → L_z<br>
+s (spin): ±1/2 → S_z</p>
+</div>
+
+<div class="component-card">
+<h4>Selection Rules</h4>
+<p>For electric dipole transitions:</p>
+<div class="formula">Δℓ = ±1, Δm = 0,±1</div>
+<p>No Δn restriction<br>
+Explains spectral line patterns</p>
+</div>
+</div>
+
+<div class="section">
+<h2>🔬 Advanced Topics</h2>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Perturbation Theory</h4>
+<p>For Ĥ = Ĥ₀ + λV:</p>
+<div class="formula">
+E_n = E_n^(0) + λE_n^(1) + λ²E_n^(2) + ...<br>
+E_n^(1) = ⟨n^(0)|V|n^(0)⟩
+</div>
+<p>Used when exact solution impossible</p>
+</div>
+
+<div class="component-card">
+<h4>Identical Particles</h4>
+<p><strong>Bosons (integer spin):</strong> Symmetric wave functions<br>
+<strong>Fermions (half-integer spin):</strong> Antisymmetric<br>
+<strong>Pauli Exclusion:</strong> No two fermions in same state</p>
+</div>
+
+<div class="component-card">
+<h4>Measurement & Collapse</h4>
+<p>Measurement of observable A with eigenstates |a_i⟩:</p>
+<p>Before: |ψ⟩ = Σc_i|a_i⟩ (superposition)<br>
+After: |ψ⟩ → |a_i⟩ with probability |c_i|²<br>
+Measured value: eigenvalue a_i</p>
+</div>
+</div>
+</div>

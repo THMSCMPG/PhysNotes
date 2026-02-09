@@ -1,0 +1,174 @@
+---
+layout: PhysNotes
+title: Electricity & Magnetism
+subtitle: Maxwell's Equations and Electromagnetic Theory
+---
+
+<div class="section">
+<h2>⚡ Electrostatics</h2>
+
+<div class="theory-box">
+<h4>Gauss's Law</h4>
+<div class="formula">∮E·dA = Q_enc/ε₀</div>
+<p>ε₀ = 8.85×10⁻¹² C²/(N·m²)</p>
+<p><strong>Differential form:</strong> ∇·E = ρ/ε₀</p>
+</div>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Electric Potential</h4>
+<div class="formula">
+V(r) = -∫E·dl<br>
+E = -∇V
+</div>
+<p><strong>Point charge:</strong> V = kQ/r<br>
+<strong>Potential energy:</strong> U = qV</p>
+</div>
+
+<div class="component-card">
+<h4>Capacitance</h4>
+<div class="formula">C = Q/V</div>
+<p><strong>Parallel plate:</strong> C = ε₀A/d<br>
+<strong>Energy stored:</strong> U = ½CV² = ½Q²/C<br>
+<strong>With dielectric:</strong> C → κC (κ = dielectric constant)</p>
+</div>
+
+<div class="component-card">
+<h4>Multipole Expansion</h4>
+<div class="formula">
+V(r) = k[Q/r + p·r̂/r² + ...]
+</div>
+<p><strong>Dipole moment:</strong> p = Σq_i r_i<br>
+<strong>Dipole field:</strong> E ∝ 1/r³</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>🔌 Magnetostatics</h2>
+
+<div class="theory-box">
+<h4>Ampère's Law</h4>
+<div class="formula">∮B·dl = μ₀I_enc</div>
+<p>μ₀ = 4π×10⁻⁷ T·m/A</p>
+<p><strong>Differential form:</strong> ∇×B = μ₀J</p>
+</div>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Biot-Savart Law</h4>
+<div class="formula">dB = (μ₀/4π)(I dl × r̂)/r²</div>
+<p><strong>Infinite wire:</strong> B = μ₀I/(2πr)<br>
+<strong>Solenoid:</strong> B = μ₀nI (n = turns/length)</p>
+</div>
+
+<div class="component-card">
+<h4>Magnetic Force</h4>
+<div class="formula">
+F = q(v × B) (on charge)<br>
+F = I(L × B) (on wire)
+</div>
+<p><strong>Lorentz force:</strong> F = q(E + v × B)</p>
+</div>
+
+<div class="component-card">
+<h4>Magnetic Dipole</h4>
+<div class="formula">
+μ = IA (current loop)<br>
+τ = μ × B (torque)<br>
+U = -μ·B (energy)
+</div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>🌊 Electromagnetic Induction</h2>
+
+<div class="theory-box">
+<h4>Faraday's Law</h4>
+<div class="formula">ε = -dΦ_B/dt</div>
+<p>Φ_B = ∫B·dA (magnetic flux)</p>
+<p><strong>Differential form:</strong> ∇×E = -∂B/∂t</p>
+<p><strong>Lenz's Law:</strong> Induced current opposes change in flux</p>
+</div>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Inductance</h4>
+<div class="formula">
+L = Φ_B/I (self-inductance)<br>
+ε = -L dI/dt
+</div>
+<p><strong>Solenoid:</strong> L = μ₀n²Al<br>
+<strong>Energy:</strong> U = ½LI²</p>
+</div>
+
+<div class="component-card">
+<h4>AC Circuits</h4>
+<p><strong>Impedance:</strong> Z = √(R² + (X_L - X_C)²)<br>
+X_L = ωL, X_C = 1/(ωC)<br>
+<strong>Resonance:</strong> ω₀ = 1/√(LC)<br>
+<strong>Power:</strong> P_avg = I_rms V_rms cos φ</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>📡 Maxwell's Equations</h2>
+
+<div class="theory-box">
+<h4>Complete Set (Differential Form)</h4>
+<div class="formula">
+∇·E = ρ/ε₀ (Gauss)<br>
+∇·B = 0 (No magnetic monopoles)<br>
+∇×E = -∂B/∂t (Faraday)<br>
+∇×B = μ₀J + μ₀ε₀∂E/∂t (Ampère-Maxwell)
+</div>
+<p><strong>Key insight:</strong> Changing E creates B, changing B creates E → electromagnetic waves</p>
+</div>
+
+<div class="component-card">
+<h4>Electromagnetic Waves</h4>
+<p>In vacuum: ∇²E = μ₀ε₀∂²E/∂t² (wave equation)</p>
+<div class="formula">
+c = 1/√(μ₀ε₀) = 3×10⁸ m/s<br>
+E = cB, E ⊥ B ⊥ direction
+</div>
+<p><strong>Poynting vector:</strong> S = (E×B)/μ₀<br>
+<strong>Intensity:</strong> I = ⟨S⟩ = (1/2)ε₀cE₀²</p>
+</div>
+</div>
+
+<div class="section">
+<h2>🔬 Special Topics</h2>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Boundary Conditions</h4>
+<p>At interface between media:</p>
+<p>E_∥ continuous<br>
+D_⊥ jump = σ_free<br>
+B_⊥ continuous<br>
+H_∥ jump = K_free</p>
+</div>
+
+<div class="component-card">
+<h4>Potentials</h4>
+<div class="formula">
+B = ∇×A (vector potential)<br>
+E = -∇φ - ∂A/∂t
+</div>
+<p><strong>Gauge freedom:</strong> A → A + ∇Λ<br>
+<strong>Lorenz gauge:</strong> ∇·A + μ₀ε₀∂φ/∂t = 0</p>
+</div>
+
+<div class="component-card">
+<h4>Radiation</h4>
+<p><strong>Larmor formula:</strong></p>
+<div class="formula">P = (μ₀q²a²)/(6πc)</div>
+<p>Accelerating charges radiate<br>
+<strong>Dipole radiation:</strong> P ∝ sin²θ/r²</p>
+</div>
+</div>
+</div>

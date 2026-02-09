@@ -1,0 +1,108 @@
+---
+layout: PhysNotes
+title: Classical Mechanics
+subtitle: Lagrangian and Hamiltonian Formulations
+---
+
+<div class="section">
+<h2>🎯 Lagrangian Mechanics</h2>
+
+<div class="theory-box">
+<h4>Lagrangian Formulation</h4>
+<p>Define Lagrangian: L = T - V (kinetic minus potential energy)</p>
+<p><strong>Euler-Lagrange Equations:</strong></p>
+<div class="formula">d/dt(∂L/∂q̇ᵢ) - ∂L/∂qᵢ = 0</div>
+<p>for each generalized coordinate qᵢ</p>
+</div>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Simple Pendulum Example</h4>
+<p>Coordinate: θ (angle from vertical)<br>
+T = ½ml²θ̇², V = mgl(1 - cos θ)<br>
+L = ½ml²θ̇² - mgl(1 - cos θ)</p>
+<p><strong>Equation of motion:</strong> θ̈ + (g/l)sin θ = 0</p>
+</div>
+
+<div class="component-card">
+<h4>Conserved Quantities</h4>
+<p><strong>Noether's Theorem:</strong> Symmetry ↔ Conservation law</p>
+<ul>
+<li>Time translation → Energy conservation</li>
+<li>Space translation → Momentum conservation</li>
+<li>Rotation → Angular momentum conservation</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>⚡ Hamiltonian Mechanics</h2>
+
+<div class="theory-box">
+<h4>Hamiltonian Formulation</h4>
+<p>Canonical momentum: pᵢ = ∂L/∂q̇ᵢ</p>
+<p>Hamiltonian: H(q,p) = Σpᵢq̇ᵢ - L</p>
+<p><strong>Hamilton's Equations:</strong></p>
+<div class="formula">
+q̇ᵢ = ∂H/∂pᵢ, ṗᵢ = -∂H/∂qᵢ
+</div>
+</div>
+
+<div class="component-card">
+<h4>Phase Space</h4>
+<p>2n-dimensional space of (q₁,...,qₙ,p₁,...,pₙ)</p>
+<p><strong>Liouville's Theorem:</strong> Phase space volume conserved by Hamiltonian flow</p>
+<p><strong>Poisson Brackets:</strong> {f,g} = Σ(∂f/∂qᵢ · ∂g/∂pᵢ - ∂f/∂pᵢ · ∂g/∂qᵢ)</p>
+</div>
+</div>
+
+<div class="section">
+<h2>🌍 Central Force Problem</h2>
+
+<div class="theory-box">
+<h4>Effective Potential</h4>
+<p>For U(r) central force:</p>
+<div class="formula">
+E = ½μṙ² + L²/(2μr²) + U(r)<br>
+U_eff(r) = L²/(2μr²) + U(r)
+</div>
+<p>Reduced mass: μ = m₁m₂/(m₁+m₂)</p>
+</div>
+
+<div class="component-card">
+<h4>Kepler's Laws</h4>
+<p>For 1/r² force (gravity):</p>
+<ol>
+<li>Orbits are ellipses with sun at focus</li>
+<li>Equal areas in equal times (L conserved)</li>
+<li>T² ∝ a³ where a = semi-major axis</li>
+</ol>
+</div>
+</div>
+
+<div class="section">
+<h2>🔄 Rigid Body Motion</h2>
+
+<div class="component-grid">
+<div class="component-card">
+<h4>Inertia Tensor</h4>
+<div class="formula">
+I = [Iₓₓ -Iₓᵧ -Iₓᵤ]<br>
+    [-Iᵧₓ  Iᵧᵧ -Iᵧᵤ]<br>
+    [-Iᵤₓ -Iᵤᵧ  Iᵤᵤ]
+</div>
+<p>L = I·ω (angular momentum)</p>
+</div>
+
+<div class="component-card">
+<h4>Euler's Equations</h4>
+<p>For torque-free rotation:</p>
+<div class="formula">
+I₁ω̇₁ = (I₂-I₃)ω₂ω₃<br>
+I₂ω̇₂ = (I₃-I₁)ω₃ω₁<br>
+I₃ω̇₃ = (I₁-I₂)ω₁ω₂
+</div>
+</div>
+</div>
+</div>
